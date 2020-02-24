@@ -12,7 +12,7 @@ import {UserEntity} from "../users/user.entity";
             inject: [ConfigService],
             useFactory: (configService: ConfigService) => ({
                 ...configService.get('database'),
-                entities: [UserEntity]
+                entities: [UserEntity],
             }),
         })
     ],
