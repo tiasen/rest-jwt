@@ -11,6 +11,7 @@ services:
       DB_USERNAME: root
       DB_PASSWORD: root
       DB_DATABASE: rest_vip
+      EXPRESS_PORT: 3000
     links:
       - db
     ports:

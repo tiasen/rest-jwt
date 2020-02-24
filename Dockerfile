@@ -8,6 +8,6 @@ ENV DB_HOST=${DB_HOST} DB_PORT=${DB_PORT} DB_USERNAME=${DB_USERNAME} DB_PASSWORD
 
 RUN yarn && yarn build
 
-EXPOSE 3000
+EXPOSE ${EXPRESS_PORT}
 
 CMD ["node", "dist/main.js"]
